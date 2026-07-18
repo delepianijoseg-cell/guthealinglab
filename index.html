@@ -7,6 +7,7 @@
     <meta name="description" content="Evidence-based guides on gut health, SIBO, leaky gut, probiotics, and low FODMAP diet. Transform your digestion naturally.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://guthealinglab.com/">
+    <base href="/guthealinglab/">
     <link rel="stylesheet" href="css/style.css">
     <script type="application/ld+json">
     {
@@ -25,12 +26,12 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <a href="/" class="logo">Gut Healing <span>Lab</span></a>
+            <a href="/guthealinglab/" class="logo">Gut Healing <span>Lab</span></a>
             <nav class="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/articles/">Articles</a></li>
-                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/guthealinglab/">Home</a></li>
+                    <li><a href="/guthealinglab/articles/">Articles</a></li>
+                    <li><a href="/guthealinglab/about.html">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,17 +50,17 @@
             <h2>The Gut Health Trinity</h2>
             <div class="featured-grid">
                 <article class="featured-card">
-                    <h3><a href="/articles/leaky-gut-evidence.html">Leaky Gut: Science vs. Hype</a></h3>
+                    <h3><a href="/guthealinglab/articles/leaky-gut-evidence.html">Leaky Gut: Science vs. Hype</a></h3>
                     <p>What the research actually says about intestinal permeability — and the proven protocol to repair it.</p>
                     <span class="tag">Evidence-Based</span>
                 </article>
                 <article class="featured-card">
-                    <h3><a href="/articles/low-fodmap-diet-plan.html">Low FODMAP Diet: Step-by-Step</a></h3>
+                    <h3><a href="/guthealinglab/articles/low-fodmap-diet-plan.html">Low FODMAP Diet: Step-by-Step</a></h3>
                     <p>The complete 30-day elimination plan with meal prep, food list, and reintroduction guide.</p>
                     <span class="tag">Diet & Nutrition</span>
                 </article>
                 <article class="featured-card">
-                    <h3><a href="/articles/best-probiotics-women-over-40.html">Best Probiotics for Women 40+</a></h3>
+                    <h3><a href="/guthealinglab/articles/best-probiotics-women-over-40.html">Best Probiotics for Women 40+</a></h3>
                     <p>Strain-specific recommendations backed by clinical trials for bloating, immunity, and hormone balance.</p>
                     <span class="tag">Supplements</span>
                 </article>
@@ -96,8 +97,8 @@
                 <div class="footer-links">
                     <p><strong>Quick Links</strong></p>
                     <ul>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/sitemap.xml">Sitemap</a></li>
+                        <li><a href="/guthealinglab/about.html">About</a></li>
+                        <li><a href="/guthealinglab/sitemap.xml">Sitemap</a></li>
                     </ul>
                 </div>
                 <div class="footer-disclaimer">
@@ -112,17 +113,18 @@
     </footer>
 
     <script>
+        const BASE = '/guthealinglab';
         const articles = [
-            { title: "7 Signs Your Gut is Crying for Help (And How to Listen)", link: "/articles/seven-signs-unhealthy-gut.html", date: "July 17, 2026", tag: "Gut Health Basics" },
-            { title: "SIBO: The Silent Epidemic Your Doctor Isn't Testing For", link: "/articles/sibo-silent-epidemic.html", date: "July 15, 2026", tag: "SIBO" },
-            { title: "Low FODMAP Diet: The Complete 30-Day Step-by-Step Plan", link: "/articles/low-fodmap-diet-plan.html", date: "July 12, 2026", tag: "Diet & Nutrition" },
-            { title: "Best Probiotics for Women Over 40: Science-Backed Strains That Work", link: "/articles/best-probiotics-women-over-40.html", date: "July 9, 2026", tag: "Supplements" },
-            { title: "Leaky Gut: What the Science Actually Says (And the Protocol That Works)", link: "/articles/leaky-gut-evidence.html", date: "July 6, 2026", tag: "Conditions" },
-            { title: "Candida Overgrowth: How to Detect and Eliminate It Naturally in 8 Weeks", link: "/articles/candida-detection-protocol.html", date: "July 3, 2026", tag: "Conditions" },
-            { title: "Histamine Intolerance: The Hidden Cause of Your Brain Fog (Complete Guide)", link: "/articles/histamine-intolerance-brain-fog.html", date: "June 30, 2026", tag: "Conditions" },
-            { title: "10 Supplements Every Gut Needs (And Which Ones Are a Waste of Money)", link: "/articles/top-10-supplements-digestive-health.html", date: "June 27, 2026", tag: "Supplements" },
-            { title: "Stress, Cortisol & Your Microbiome: The Gut-Brain Connection Explained", link: "/articles/stress-cortisol-microbiome.html", date: "June 24, 2026", tag: "Lifestyle" },
-            { title: "Best At-Home Microbiome Tests of 2026: Complete Buyer's Guide", link: "/articles/best-at-home-microbiome-tests.html", date: "June 21, 2026", tag: "Reviews" }
+            { title: "7 Signs Your Gut is Crying for Help (And How to Listen)", link: BASE + "/articles/seven-signs-unhealthy-gut.html", date: "July 17, 2026", tag: "Gut Health Basics" },
+            { title: "SIBO: The Silent Epidemic Your Doctor Isn't Testing For", link: BASE + "/articles/sibo-silent-epidemic.html", date: "July 15, 2026", tag: "SIBO" },
+            { title: "Low FODMAP Diet: The Complete 30-Day Step-by-Step Plan", link: BASE + "/articles/low-fodmap-diet-plan.html", date: "July 12, 2026", tag: "Diet & Nutrition" },
+            { title: "Best Probiotics for Women Over 40: Science-Backed Strains That Work", link: BASE + "/articles/best-probiotics-women-over-40.html", date: "July 9, 2026", tag: "Supplements" },
+            { title: "Leaky Gut: What the Science Actually Says (And the Protocol That Works)", link: BASE + "/articles/leaky-gut-evidence.html", date: "July 6, 2026", tag: "Conditions" },
+            { title: "Candida Overgrowth: How to Detect and Eliminate It Naturally in 8 Weeks", link: BASE + "/articles/candida-detection-protocol.html", date: "July 3, 2026", tag: "Conditions" },
+            { title: "Histamine Intolerance: The Hidden Cause of Your Brain Fog (Complete Guide)", link: BASE + "/articles/histamine-intolerance-brain-fog.html", date: "June 30, 2026", tag: "Conditions" },
+            { title: "10 Supplements Every Gut Needs (And Which Ones Are a Waste of Money)", link: BASE + "/articles/top-10-supplements-digestive-health.html", date: "June 27, 2026", tag: "Supplements" },
+            { title: "Stress, Cortisol & Your Microbiome: The Gut-Brain Connection Explained", link: BASE + "/articles/stress-cortisol-microbiome.html", date: "June 24, 2026", tag: "Lifestyle" },
+            { title: "Best At-Home Microbiome Tests of 2026: Complete Buyer's Guide", link: BASE + "/articles/best-at-home-microbiome-tests.html", date: "June 21, 2026", tag: "Reviews" }
         ];
 
         const grid = document.getElementById('article-grid');
