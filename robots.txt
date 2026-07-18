@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guthealinglab.com/sitemap.xml
